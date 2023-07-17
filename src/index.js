@@ -1,12 +1,12 @@
-import React from "react";
+ import React from "react";
 import ReactDOM from "react-dom";
-import * as serviceWorker from "./serviceWorker";
-import App from "./components/App";
+ import * as serviceWorker from "./serviceWorker";
+ import App from "./components/App";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducers from "./reducers";
 
-const store = createStore(reducers);
+ const store = createStore(reducers);
 
 ReactDOM.render(
   <Provider store={store}>
@@ -14,4 +14,4 @@ ReactDOM.render(
   </Provider>,
   document.querySelector("#root")
 );
-serviceWorker.register();
+ serviceWorker.register();
