@@ -7,11 +7,10 @@ import { createStore } from "redux";
 import reducers from "./reducers";
 
  const store = createStore(reducers);
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.querySelector("#root")
 );
  serviceWorker.register();
